@@ -189,6 +189,7 @@ html {
     font-weight: 600;
     font-size: 1rem;
     background: var(--first-color);
+    border: none;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -221,11 +222,11 @@ html {
     color: var(--fourth-color);
 }
 
-.project-row-bloc{
+.project-row-bloc, .project-row-proprios, .project-row-charges{
     width: 100%;
 }
 
-.project-col-bloc{
+.project-col-bloc, .project-col-proprios, .project-col-charges{
     border: 2px solid var(--first-color);
     border-radius: 10px;
     padding: 10px 20px;
@@ -307,13 +308,76 @@ html {
     margin-left: 5px;
 }
 
+/* DASHBOARD PAGE */
 
+.cardBox {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
 
+.cardBox .card {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.1s;
+}
 
+.cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--fourth-color);
+}
 
+.cardBox .card .cardName {
+    color: #000;
+    font-size: 1.1rem;
+}
 
+.cardBox .card .icon {
+    font-size: 3rem;
+    color: var(--second-color);
+}
 
+.cardBox .card:hover {
+    background: var(--first-color);
+}
 
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .icon {
+    color: #fff;
+}
+
+.graphbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+}
+
+.graphbox .box {
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
 
 
 
@@ -321,7 +385,7 @@ html {
 
 /* RESPONSIVE SIDE-NAV */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
     .left-nav {
         width: 60px;
     }
@@ -354,4 +418,14 @@ html {
     .project-row {
         flex-direction: column;
     }
+
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .graphbox {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
 }

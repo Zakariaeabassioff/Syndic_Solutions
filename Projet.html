@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Syndic Solutions</title>
+</head>
+
+<body>
+    <section class="Main">
+        <section class="left-nav">
+            <a href="#" class="logo">
+                <img src="Images/SS_V4_transparent.png" alt="Logo" class="logo-img">
+                <img src="Images/Resp_syndic_logo_V1.png" alt="Logo" class="logo-icon">
+            </a>
+            <ul class="nav_links">
+                <li><a href="Dashboard.html"><i class="fa-solid fa-house"></i>
+                        <p>Dashbroad</p>
+                    </a></li>
+                <li><a href="Messages.html"><i class="fa-solid fa-message"></i>
+                        <p>Messages</p>
+                    </a></li>
+                <li><a href="Projet.html"><i class="fa-solid fa-building"></i>
+                        <p>Projet</p>
+                    </a></li>
+                <li><a href="Reclamations.html"><i class="fa-solid fa-circle-exclamation"></i>
+                        <p>Réclamations</p>
+                    </a></li>
+                <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i>
+                        <p>Paramètres</p>
+                    </a></li>
+                <div class="active"></div>
+            </ul>
+        </section>
+
+        <section class="right-side">
+            <section class="top-side">
+                <div class="search-box">
+                    <input type="text" name="" placeholder="Type to search" class="search-txt">
+                    <a href="#" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <span name="">Admin</span>
+                </div>
+
+                <div class="login">
+                    <button type="button">LOG OUT</button>
+                </div>
+            </section>
+
+            <section class="dynamic-side">
+                <div class="project-row">
+                    <div class="project-col project-col-proj">
+                        <p>Nom du Projet : <span>Kawassim</span></p>
+                        <p>Adresse : <span>Hay sidi boukhari, lotis karim N5</span></p>
+                        <p>Superficie (HA): <span>5</span></p>
+                        <p>Nombre de blocs : <span>10</span></p>
+                        <p>Nombre d'immeubles : <span>50</span></p>
+                        <p>Nombre de biens : <span>500</span></p>
+                        <p>Nombre de propriétaires : <span>420</span></p>
+                        <p>Recettes (mensuelle): <span>80 000</span> dhs</p>
+                        <p>Dépenses (mensuelle): <span>70 000</span> dhs</p>
+                    </div>
+
+                    <div class="project-col project-col-emplacement">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.7245807657637!2d-5.83480556888738!3d35.782141268625736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c78a39abc89eb%3A0xdce51c6de6c00c7c!2sAv.%20Sidi%20Boukhari%2C%20Tanger!5e0!3m2!1sfr!2sma!4v1656945990600!5m2!1sfr!2sma"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="project-row-bloc">
+                    <div class="project-col-bloc">
+                        <p>Nombre de blocs : <span>10</span></p>
+                        <p>Nombre d'immeubles : <span>50</span></p>
+                        <p style="display: inline-block; margin-right: 5px;">Bloc : </p><select name="" id=""
+                            style="display: inline-block; font-size: 1rem;">
+                            <option value="">A</option>
+                            <option value="">B</option>
+                            <option value="">C</option>
+                            <option value="">D</option>
+                        </select>
+                        <p style="display: inline-block; margin-right: 5px; margin-left: 20px;">Immeuble : </p><select
+                            name="" id="" style="display: inline-block; font-size: 1rem;">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+
+                        <div class="table">
+                            <div class="table_header">
+                                <p>Liste des biens</p>
+                                <div>
+                                    <input type="text" placeholder="Rechercher un bien...">
+                                    <button class="btn">
+                                        <a href="#">+ Ajouter un bien</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table_section">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Bloc</th>
+                                            <th>Immeuble</th>
+                                            <th>Etage</th>
+                                            <th>Numéro</th>
+                                            <th>Propriétaire</th>
+                                            <th>Locataire</th>
+                                            <th>Cotisation</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>A</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>5</span></td>
+                                            <td><span>20</span></td>
+                                            <td><span>Ahmed Slaoui</span></td>
+                                            <td><span>None</span></td>
+                                            <td><span>57.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row-proprios">
+                    <div class="project-col-proprios">
+                        <p>Nombre de propriétaires : <span>420</span></p>
+                        <p>Nombre de biens : <span>500</span></p>
+                        <div class="table">
+                            <div class="table_header">
+                                <p>Total des cotisations : <span></span> Dhs</p>
+                                <p>Total réglé : <span></span> Dhs</p>
+                                <p>Total dû : <span></span> Dhs</p>
+                                <div>
+                                    <input type="text" placeholder="Rechercher un propriétaire..."
+                                        style="width: 230px;">
+                                    <button class="btn">
+                                        <a href="#">+ Ajouter un propriétaire</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table_section">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Nom & Prénom</th>
+                                            <th>Nb. de biens</th>
+                                            <th>Total des cotisations</th>
+                                            <th>Total réglé</th>
+                                            <th>Total dû</th>
+                                            <th>Situation</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Rachid</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>0</span> Dhs</td>
+                                            <td style="background: green;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Abassi Zakariae</span></td>
+                                            <td><span>2</span></td>
+                                            <td><span>130.5</span> Dhs</td>
+                                            <td><span>54.5</span> Dhs</td>
+                                            <td><span>76</span> Dhs</td>
+                                            <td style="background: red;"></td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-row-charges">
+                    <div class="project-col-charges">
+                        <div class="table">
+                            <div class="table_header">
+                                <p>Liste des Charges : </p>
+                                <p>Montant Total : <span style="color: red;">7011.25</span> Dhs</p>
+                                <div>
+                                    <button class="btn">
+                                        <a href="#">+ Ajouter une charge</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table_section">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Charge</th>
+                                            <th>Montant</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>Consommation Electricité et Eau</span></td>
+                                            <td><span>1500</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Gardiennage</span></td>
+                                            <td><span>1200</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Nettoyage</span></td>
+                                            <td><span>1300.75</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Entretien</span></td>
+                                            <td><span>1300</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Maintenance Ascenseurs</span></td>
+                                            <td><span>700</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Entretien Espace Vert</span></td>
+                                            <td><span>900</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><span>Maintenance TV-sat</span></td>
+                                            <td><span>110.5</span> Dhs</td>
+                                            <td>
+                                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                                <button><i class="fa-solid fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+</body>
+
+</html>
